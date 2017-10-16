@@ -8,7 +8,7 @@ public class Solution {
         // write your code here
         if(matrix.length == 0)  return false;
         int start = 0, end = matrix.length-1;
-        
+        //search the target in which row
         while(start+1<end){
             int mid = start + (end-start)/2;
             if(matrix[mid][0] == target)  return true;
@@ -26,7 +26,7 @@ public class Solution {
         if(matrix[end][0] <= target){
             row = end;
         }
-        
+        //search the target in this row
         start = 0;
         end = matrix[row].length-1;
         while(start+1<end){
