@@ -15,6 +15,7 @@ public class Solution {
                 start = mid;
             }
         }
+        //double check
         if(nums[start] <= nums[nums.length-1]){
             return nums[start];
         }
